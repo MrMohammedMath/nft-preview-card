@@ -1,0 +1,151 @@
+@include component(card) {
+    background-color: var(--card-bg);
+    width: 325px;
+    padding: 1.5em;
+    border-radius: 15px;
+
+    @include part(image) {
+        position: relative;
+        border-radius: 5px;
+
+        @include part(view) {
+            display: block;
+            width: 100%;
+            border-radius: inherit;
+            margin-bottom: 1.25em; // 20px
+        }
+
+        @include part(filter) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            z-index: 2;
+
+            border-radius: inherit;
+
+            &:hover,
+            &:focus {
+                --filter-color-opacity: 0.5;
+                --filter-icon-opacity: 1;
+            }
+
+            @include part(color) {
+                background-color: var(--secondary-color);
+                opacity: var(--filter-color-opacity); // to 0.5
+
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+
+                z-index: 3;
+
+                border-radius: inherit;
+
+            }
+
+            @include part(icon) {
+                opacity: var(--filter-icon-opacity); // to 1
+                z-index: 4;
+            }
+        }
+
+        @include part(view-icon) {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    @include part(title) {
+        display: inline-block;
+        color: var(--tertiary-color);
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin-bottom: 0.9375em; // 15px
+
+        &:hover,
+        &:focus {
+            color: var(--secondary-color);
+        }
+    }
+
+    @include part(paragraph) {
+        color: var(--primary-color);
+        font-weight: 300;
+        line-height: 27px;
+        margin-bottom: 15px;
+    }
+
+    @include part(status) {
+        display: flex;
+        justify-content: space-between;
+
+        padding-bottom: 0.9375em; // 15px
+        border-bottom: 2px var(--line-bg) solid;
+        margin-bottom: 0.9375em; // 15px
+
+        @include part(price) {
+            display: flex;
+            align-items: center;
+            color: var(--secondary-color);
+            font-size: 1rem;
+            font-family: 300;
+
+
+            @include part(icon) {
+                margin-right: 0.4375em; // 7px
+            }
+        }
+
+        @include part(time-left) {
+            display: flex;
+            align-items: center;
+            color: var(--primary-color);
+            font-size: 1rem;
+            font-family: 300;
+
+            @include part(icon) {
+                margin-right: 0.4375em; // 7px
+            }
+        }
+    }
+
+    @include part(about) {
+        display: flex;
+        align-items: center;
+
+        color: var(--primary-color);
+
+        font-weight: 300;
+
+        @include part(avatar) {
+            width: 35px;
+            border: 1px var(--tertiary-color) solid;
+            border-radius: 50%;
+            margin-right: 0.9375em; // 15px
+        }
+
+        @include part(author) {
+            color: var(--tertiary-color);
+
+            &:hover,
+            &:focus {
+                color: var(--secondary-color);
+            }
+        }
+    }
+}

@@ -1,1 +1,35 @@
 //  contains variables, resets, mixins, and other similar styles
+:root {
+
+    --primary-color:hsl(215, 51%, 70%);
+    --secondary-color: hsl(178, 100%, 50%);
+    --tertiary-color: hsl(0, 0%, 100%);
+
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line-bg: hsl(215, 32%, 27%);
+
+    --font-family: 'Outfit', sans-serif;
+
+    --filter-color-opacity: 0;
+    --filter-icon-opacity: 0;
+}
+
+@mixin desktop {
+    @media only screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: inherit;
+}
+
+body{
+    background-color: var(--main-bg);
+    font-family: var(--font-family);
+    transition: all 0.5s;
+}

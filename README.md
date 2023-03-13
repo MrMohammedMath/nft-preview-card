@@ -1,63 +1,56 @@
-# React App Template with Typescript & SASS
+# Frontend Mentor - NFT preview card component solution
 
-## How to use it
-```sh
-git clone https://github.com/MrMohammedMath/react-template.git
+This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U).
 
- mv react-template/ <project-name>/
+## Screenshot
 
-cd <project-name>
+### Desktop Mode
+<img src='./screenshots/desktop.jpeg' >
 
-# in package.json change the name to <prokect name>
+### Mobile Mode
+<img src='./screenshots/mobile.jpeg' width='30%'>
 
-npm run setup
+## Links
+- Live Site URL: [product-preview-card-component-mh.netlify.app](https://interactive-rating-component-mh.netlify.app/)
 
+## Usage
+
+```bash
+  git clone https://github.com/MrMohammedMath/interactive-rating-component
+
+  cd interactive-rating-component
+
+  npm install
 ```
 
+- for running dev server
 
-## Available Scripts
+```bash
+npm run start
+```
 
-In the project directory, you can run:
+- for build & review
 
-### `npm setup`
+```bash
+npm run build && npm run preview
+```
 
-remove the remote origin then install dependencies then open the development server.
+## My process
 
-### `npm start`
+### Built with
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Semantic HTML5 markup
+- Flexbox
+- Mobile-first workflow
+- [SCSS](https://sass-lang.com/s) - Superset of CSS
+- [csstyle](https://www.csstyle.io/)
+- [React](https://reactjs.org/) - JS library
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Author
 
-### `npm test`
+- Frontend Mentor - [@Mohammed Hassan](https://www.frontendmentor.io/profile/MrMohammedMath)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- linkedin [@Mohammed Hassan](https://www.linkedin.com/in/mr-mohammed-hassan/)
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Acknowledgments
+- Inspriation by [Frontend Mentor](https://www.frontendmentor.io/home)
