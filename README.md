@@ -16,9 +16,9 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 ## Usage
 
 ```bash
-  git clone https://github.com/MrMohammedMath/interactive-rating-component
+  git clone https://github.com/MrMohammedMath/nft-preview-card.git
 
-  cd interactive-rating-component
+  cd nft-preview-card
 
   npm install
 ```
