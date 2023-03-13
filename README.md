@@ -11,7 +11,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 <img src='./screenshots/mobile.jpeg' width='30%'>
 
 ## Links
-- Live Site URL: [product-preview-card-component-mh.netlify.app](https://interactive-rating-component-mh.netlify.app/)
+- Live Site URL: [nft-preview-card-mh.netlify.app](https://nft-preview-card-mh.netlify.app/)
 
 ## Usage
 
